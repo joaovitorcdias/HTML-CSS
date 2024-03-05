@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://github.com/joaovitor-cd?tab=repositories" target="_blank" rel="external">repositório público no GitHub.</a></p>
+    <p>Você também pode acessar esse <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs" target="_blank" rel="external">canal do professor no YouTube.</a></p>
+    <h1>Usando links internos</h1>
+    <p>Está é a primeira página do site, se você quiser pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página.</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias.</a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="Ligações em toda parte.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
+
+<!-- <a> de ancora href seria referencia hipertext e ente "" coloca a URL-->
+<!-- Para abrir um site que não é seu, deve ser fazer o (linha abaixo) para não sobrepor o seu site.-->
+<!-- target="_blank" para quando quero que ele tenho alvo _blank, ou seja uma janela em branco, rel="external" para link de tipo de externo-->
+<!-- Para acessar a segunda página, tem que estar na mesma pasta (os arquivos) em href a dica é apertar ctrl + espaço que já aparece os arquivos da pasta, não precisa colocar um link completo.-->
+<!-- Não existe rel interno, se coloca na primeira página o rel = next e na posterior rel = prev. Isso não muda nada visual, é mais uma ferramenta pra aprimorar o site para ser ""bem visto" pelo google.-->
+<!-- target = _self quer dizer que é pra abrir na mesma aba, sem abrir uma nova aba.-->

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários tipos de dispositivos ou simplismente aumente e diminua o tamanho do seu navegador. </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">  
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- <audio src="midia/Too Late Now - Go By Ocean _ Ryan McCaffrey.mp3" controls autoplay></audio> -->
+    <audio preload="metadata" controls autoplay loop> 
+        <source src="midia/Too Late Now - Go By Ocean _ Ryan McCaffrey.ogg" type="audio/ogg"> <!--exemplo se tivesse nesse formato-->
+        <source src="midia/Too Late Now - Go By Ocean _ Ryan McCaffrey.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
+
+<!-- <picture> é parecida com <img> mas permite criar vários source dentro.-->
+<!-- <source:media:type> max-widht: 1050px: você está dizendo que o tamanho máximo para carregar a imagem G é 1000px, se o navegador diminuir o tamanho vai carregar nesse caso a imagem M. E assim por diante. Muito importante para experiência do cliente, o que melhora para os algoritimos de buscas.-->
+<!-- detalhe que os novos sources que vai incluindo no codigo tem que ser acima (como se fosse invertido a ordem mesmo, o que colocou primeiro fica na base e os proxímos subindo.) do que colocou primeiro(base).-->
+<!-- max-width = largura máxima-->
+<!-- pra adicionar audio pode simplismente tag audio e controls(botão play) e autoplay pra reproduzir automaticamente(não ta funcionando)-->
+<!-- ou tag audio com source src para adicionar varios(no caso se tiver em outros formatos ogg por ex) na mesma logica da media, ordem contraria, primeiro é o de baixo e vai subindo.-->
+<!-- parametro preload = auto (carregar tudo antes de abrir site(demora mais)), none(não carregar nada) e o indicado metadata(carrega o player e informações mas não necessita carregar o audio inteiro antes de abrir site.)-->
+<!-- loop para reiniciar o audio sozinho quando acabar.-->

@@ -1,0 +1,7 @@
+No chrome web store, procurar extensão Fonts Ninja e usar no chrome.
+
+Dentro de imagens essa extensão não funciona, para isso podemos usar os sites:
+- whatfontis.com  (Melhor)
+- fontsquirrel.com
+- myfonts.com
+com menos precisão e as vezes não detecta tudo mas pode ajudar.

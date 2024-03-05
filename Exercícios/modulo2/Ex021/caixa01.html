@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* border-width: 10px;
+               border-style: solid;
+               border-color: darkgray;  */
+
+            border: 10px solid darkgray;   
+
+            /* padding-top: 10px;
+               padding-right: 10px;
+               padding-bottom: 10px;
+               padding-left: 10px; */
+
+            padding: 10px 10px 10px 10px;  /* sentido horario sempre: top, right, bottom, left */
+            
+            /* margin-top: 20px;
+               margin-right: 20px;
+               margin-bottom: 40px;
+               margin-left: 20px; */
+
+            margin: 20px auto 40px auto;   
+
+            /* outline-width: 5px;
+               outline-style: dashed;
+               outline-color: black; */
+
+               outline: 5px dashed black;
+        }
+
+        a { /* inline-level */
+            border: 5px solid blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
+
+<!-- a ferramenta devtools ajuda para vizualizar a página e fazr testes sem alterar o original. tres pontos do chrome, mais ferramentas, ferramentas do desenvolvedor -->
+
+<!-- todo elemento que você quiser no meio da tela usar margin: auto se for uma caixa, no caso de texto é text align. -->
+
+<!-- se colocar auto no margin right e left ele centraliza.
+     quando os valores são iguais posso colocar uma vez só padding: 10px;
+-->
+
+<!-- A diferença básica entre o inline e block é que o navegador acomoda os elementos de bloco um abaixo do outro e os inline à esquerda um ao lado do outro. -->

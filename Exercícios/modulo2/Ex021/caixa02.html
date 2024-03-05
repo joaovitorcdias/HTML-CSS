@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav {
+            background-color: rgb(78, 78, 78);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);  /* criando uma sombra, transparência da metade para baixo | deslocamento horizontal, deslocamento vertical, blur(desfoque), spread(espalhar), cor | */      
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;    /* arredondar bordas */
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(223, 223, 223);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 10px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+      <h1>Meu site</h1>
+       <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+       </nav>
+    </header>
+
+    <main>
+     <section id="assuntos">
+        <p>Esportes</p>
+     </section>
+     <section id="noticias">
+        <article>
+            <h2>Notícia X</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem provident, eos quibusdam itaque eveniet nisi sapiente nobis sequi. Porro nisi voluptatibus assumenda veniam? Dolorum quasi, consequuntur nemo expedita nisi harum.</p>
+            <aside>
+                <p>Artigo escrito por João</p>
+            </aside>
+        </article>
+        <article></article>
+
+     </section>
+    </main>
+
+    <footer>
+     <p>Desenvolvido por CursoemVideo</p>
+    </footer>
+</body>
+</html>
+
+<!-- Você consegue começar a organizar o conteudo para criar um site utilizando as tags agrupadoras com semantica(significação) -->
+<!-- você pode organizar essas tags da maneira que quiser, não precisa saber o que ta dentro do que, essa foi uma sugestão, se o seu menu não esta dentro do seu cabeçalho não precisa colocar no header, o article não tem que sempre estar dentro de section, crie do seu jeito. -->
+<!-- 
+    header = cabeçalho
+
+    main = principal
+
+    footer = rodapé
+
+    aside = define um bloco de conteúdo que faz referência ao conteudo principal que o cerca 
+
+    section = section é utilizada para marcar as seções de conteúdo de uma página. Com Esse elemento agrupamos de forma  lógica nosso conteúdo, separando a informação em áreas diferentes.
+
+    article = artigo, representa uma composição independente em um documento
+-->

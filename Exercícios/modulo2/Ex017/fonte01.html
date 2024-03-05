@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+            /*
+            Medidas Absolutas:
+            cm, mm, in(polegadas), px, pt, pc
+
+            Medidas Relativas:
+            em(altura do M), ex, rem, vw, vh, &
+            recomendados px e em
+            16px geralmente = 1em
+            */
+        }    
+
+        h1 {
+            font: italic bolder 3em 'Work Sans', sans-serif
+        }
+        h2 {
+            font: bold 2em 'Work Sans'
+        }
+
+        /* No lugar de fazer isso:
+            font-family: 'Work Sans', sans-serif;
+            font-size: 3em;
+            font-weight: bolder;
+            - lighter, normal, bold, bolder | 100 - 900 
+            font-style: italic;
+            text-decoration: underline;
+         Podemos fazer de forma mais simples, chamamos de shorthand font:
+        ordem: font-style -> font-weight -> font-size -> font-family
+        como foi feito acima no h1 ou pode fazer igual no h2 também funciona quando não quer style.
+        */
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ab dolorum provident, necessitatibus, doloribus eveniet nobis adipisci alias dolores obcaecati culpa eaque quam a aperiam tempora fugiat, at totam voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maiores nostrum, ullam in odio voluptas iste eos repudiandae, iure incidunt mollitia modi repellat error officiis voluptates itaque expedita at qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perspiciatis enim provident, at quae quidem maiores illo nulla minus accusantium voluptatibus excepturi tenetur quis ut incidunt. Optio ipsam eligendi voluptas.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas dolor eius est praesentium vero pariatur iusto dolores corrupti voluptatem, saepe obcaecati magnam molestiae dolorum, corporis voluptate odio? Laboriosam, corrupti sint.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quam, esse magni ex omnis provident eos voluptatem consequuntur atque quibusdam nobis ab soluta eveniet eius dignissimos eligendi possimus maiores ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at tempora voluptas assumenda aperiam reprehenderit delectus reiciendis similique cumque, inventore dolor minima dolores, explicabo quam iure possimus sequi saepe nobis.</p>
+</body>
+</html>
+
+<!-- No font-family se for colocar arial ele já sugere a sequência "Arial, Helvetica, sans-serif", isso serve para caso algum dispositivo não tenha a fonte arial ele usa helvetica e se não tiver a sans-serif. Isso se chama Safe Font Combinations. -->
+
+<!-- weight = peso | width = largura | height = altura -->

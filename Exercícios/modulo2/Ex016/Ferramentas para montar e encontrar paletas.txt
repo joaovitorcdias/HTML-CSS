@@ -1,0 +1,11 @@
+Ferramentas/sites para montar e descobrir paletas interessantes:
+
+- color.adobe.com
+- paletton.com
+- coolors.com
+
+
+Como extrair uma cor que gostei de um site que estou navegando:
+
+- Extensão do chrome que chama ColorZilla que já mostra o código da cor usando a extensão no site.
+- Baixar uma imagem e carregar no color adobe para ver a paleta da imagem.

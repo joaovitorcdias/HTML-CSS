@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal">Criando sites com HTML e CSS</h1>
+
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML Básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam modi deleniti nostrum soluta aliquam laudantium sequi, <span class="basico">quae voluptatibus odio</span>, incidunt enim iure qui reiciendis quisquam provident voluptatum laboriosam blanditiis?</p>
+    <h2 class="intermediario">HTML Intermediário</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo repellat nisi quo odit culpa est veritatis, iste quos, autem maiores temporibus eaque alias ut corporis, aut quasi natus eos iusto!</p>
+    <h2 class="avancado">HTML Avançado</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel eius amet dolorem neque, dolorum assumenda, id sequi possimus quis vitae eligendi consequatur, iure perferendis molestias inventore nisi doloribus architecto commodi!</p>
+
+    <h1 class="destaque">Aprendendo CSS</h1>
+    <h2 class="basico">CSS Básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis atque similique quidem eveniet minus eaque asperiores, obcaecati molestias maiores delectus vero voluptas rerum ut corrupti magnam omnis alias assumenda dolore.</p>
+    <h2 class="intermediario">CSS Intermediário</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet debitis nobis molestias ut harum veniam perferendis asperiores magnam, tempore, nemo ipsum excepturi fuga natus, quae provident sed distinctio ab!</p>
+    <h2 class="avancado destaque">CSS Avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae consequuntur perspiciatis ullam omnis magni quibusdam accusamus delectus nam neque consectetur officia molestiae commodi aliquid tenetur, eligendi odit facilis non?</p>
+</body>
+</html>
+
+<!-- Dar uma identidade para alguma tag, facilita para uma personalização diferente, como no caso do primeiro h1 com id="principal", posso fazer configurações em css que afetem só a ele, sem alterar os outros h1 -->
+
+<!-- Tudo que em HTML for id em CSS é # 
+     Tudo que em HTML for class em CSS é . (ponto) -->
+
+<!-- Apesar de até funcionar, é errado e não se deve utilizar mais de um id="principal", ou repetir ids em várias tags. Quando eu tenho 2 elementos ou mais que quero aplicar a mesma configuração, devo utilizar class. -->  
+
+<!-- esse <span> é só um delimitador de texto -->
+
+<!-- pode se usar mais de uma class em um elemento como no caso do h2 class="avancado destaque", é só colocar dentro das aspas as classes sem virgula para separar -->    
+
+<!-- consigo colocar id e class no mesmo elemento, mas tem uma herança, ou seja o que vem de cima pra baixo sobrepõe no caso de algo igual -->
