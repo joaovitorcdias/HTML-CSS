@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            Shorthand - background 
+            color > image > position > repeat > size* > attachment
+            * o size não esta aplicando a shorthand ainda, nesse caso terá que colocar separado
+
+            O shorthand é a maneira simplificada, escrever na mesma linha tudo que foi escrito acima.
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid rgb(202, 202, 1);
@@ -27,12 +37,15 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugiat veniam, eum molestiae officia fugit aliquid ut quam! Aperiam sequi odit quos sunt, cupiditate tempora repudiandae cum officia labore fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus et magnam quasi fuga soluta vitae commodi dolores voluptatibus magni mollitia officiis tempore laborum dolorum fugit at animi, vel provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quidem veritatis necessitatibus asperiores obcaecati? Iste, nemo eligendi. Quis voluptatem id a, maiores fugit delectus, sunt eos odit error beatae veritatis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugiat veniam, eum molestiae officia fugit aliquid ut quam! Aperiam sequi odit quos sunt, cupiditate tempora repudiandae cum officia labore fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus et magnam quasi fuga soluta vitae commodi dolores voluptatibus magni mollitia officiis tempore laborum dolorum fugit at animi, vel provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quidem veritatis necessitatibus asperiores obcaecati? Iste, nemo eligendi. Quis voluptatem id a, maiores fugit delectus, sunt eos odit error beatae veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugiat veniam, eum molestiae officia fugit aliquid ut quam! Aperiam sequi odit quos sunt, cupiditate tempora repudiandae cum officia labore fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus et magnam quasi fuga soluta vitae commodi dolores voluptatibus magni mollitia officiis tempore laborum dolorum fugit at animi, vel provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quidem veritatis necessitatibus asperiores obcaecati? Iste, nemo eligendi. Quis voluptatem id a, maiores fugit delectus, sunt eos odit error beatae veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugiat veniam, eum molestiae officia fugit aliquid ut quam! Aperiam sequi odit quos sunt, cupiditate tempora repudiandae cum officia labore fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus et magnam quasi fuga soluta vitae commodi dolores voluptatibus magni mollitia officiis tempore laborum dolorum fugit at animi, vel provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quidem veritatis necessitatibus asperiores obcaecati? Iste, nemo eligendi. Quis voluptatem id a, maiores fugit delectus, sunt eos odit error beatae veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugiat veniam, eum molestiae officia fugit aliquid ut quam! Aperiam sequi odit quos sunt, cupiditate tempora repudiandae cum officia labore fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus et magnam quasi fuga soluta vitae commodi dolores voluptatibus magni mollitia officiis tempore laborum dolorum fugit at animi, vel provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quidem veritatis necessitatibus asperiores obcaecati? Iste, nemo eligendi. Quis voluptatem id a, maiores fugit delectus, sunt eos odit error beatae veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugiat veniam, eum molestiae officia fugit aliquid ut quam! Aperiam sequi odit quos sunt, cupiditate tempora repudiandae cum officia labore fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus et magnam quasi fuga soluta vitae commodi dolores voluptatibus magni mollitia officiis tempore laborum dolorum fugit at animi, vel provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quidem veritatis necessitatibus asperiores obcaecati? Iste, nemo eligendi. Quis voluptatem id a, maiores fugit delectus, sunt eos odit error beatae veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugiat veniam, eum molestiae officia fugit aliquid ut quam! Aperiam sequi odit quos sunt, cupiditate tempora repudiandae cum officia labore fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus et magnam quasi fuga soluta vitae commodi dolores voluptatibus magni mollitia officiis tempore laborum dolorum fugit at animi, vel provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quidem veritatis necessitatibus asperiores obcaecati? Iste, nemo eligendi. Quis voluptatem id a, maiores fugit delectus, sunt eos odit error beatae veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fugiat veniam, eum molestiae officia fugit aliquid ut quam! Aperiam sequi odit quos sunt, cupiditate tempora repudiandae cum officia labore fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus et magnam quasi fuga soluta vitae commodi dolores voluptatibus magni mollitia officiis tempore laborum dolorum fugit at animi, vel provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quidem veritatis necessitatibus asperiores obcaecati? Iste, nemo eligendi. Quis voluptatem id a, maiores fugit delectus, sunt eos odit error beatae veritatis.</p>
     </main>
 </body>
 </html>
 
 
 <!-- background-size:cover informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre o contêiner inteiro (nesse caso, todo o html). Mesmo que isso corte a imagem;
-background-size:contain mostar 100% da imagem sem cortar, mas pode não cobrir toda a tela.
+background-size:contain mostar 100% da imagem sem cortar, mas pode não cobrir toda a tela;
+background-attachment:
+fixed: imagem permanece fixa em relação à viewport (janela do navegador) e não rola juntamente com o conteúdo;
+scroll: imagem não permanece fixa em relação à viewport (janela do navegador) e rola juntamente com o conteúdo.
 -->
