@@ -6,11 +6,23 @@
     <title>Tabelas</title>
     <style>
         body {
+            height: 98vh;
+            background: black url(imagem/cidade.jpg) center center no-repeat fixed;
+            background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            width: 500px;
+            color: white;
+            background-color: black;
+            text-align: center;
         }
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -18,13 +30,40 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: rgb(92, 92, 92);
+            background-color: rgb(66, 66, 66);
             color: white;
+        }
+        
+        thead > tr > th {     
+            position: sticky;
+            top: -1px;
+            background-color: rgb(66, 66, 66);
+        }
+        /* ^ essa configuração somada a colocar 'position: relative em table' vai fazer com que o cabeçalho     apareça mesmo rolando a página abaixo, ficará fixo. E o efeito acaba junto com a tabela, não aparece em um texto abaixo. */
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(134, 134, 134);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
         }
 
         td.num {
             text-align: right;
+        }
+
+        p {
+            color: black;
+            background-color: white;
         }
     </style>
 </head>
@@ -34,20 +73,26 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES (PODE USAR SEMPRE, QUALQUER TAMANHO)
         TABLE
-            CAPTION
+            CAPTION  -- especifica a legenda (ou título) de uma tabela.
+
             THEAD -- cabeçalho
                 TR, TD, TH
+
             TBODY -- corpo
                 TR, TD, TH
+                
             TFOOT -- rodapé
                 TR, TD, TH
+
+        *TH para titulo e TD para dados.
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
            <tr>
-                <th>Estado</th>
-                <th>População</th> 
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>  <!-- style dentro para coisas pontuais, como a largura -->
            </tr>
         </thead>
 
@@ -164,10 +209,32 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>  <!-- th porque é titulo e td porque é dado. -->
+                <th scope="row">Total de Habitantes</th>  <!-- th porque é titulo e td porque é dado. -->
                 <td class="num"><strong>203.062.512</strong></td>                
             </tr>            
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro explicabo doloribus velit aspernatur laborum perspiciatis vitae dolore quisquam corrupti iste, assumenda, quae incidunt? Temporibus velit placeat quos commodi hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati labore numquam blanditiis nam. Fugit aspernatur quidem odio illo, beatae quasi in sint, libero atque non omnis voluptas totam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam nam delectus eius commodi vitae ipsam. Ullam, adipisci dicta! Vero praesentium nobis quas magnam quo, laudantium quos quidem alias.</p>
+
 </body>
 </html>
+
+
+
+<!-- scope não traz efeito visual nenhum, mas é muito importante para os mecanismos de buscas (Google). scope="col" quando o título pertence ao que vem abaixo e scope="row" quando o título pertence a linha em que ele pertence;
+
+border-collapse da tabela, que elimina o espaço entre as células de forma que a as bordas em torno das células se fundam em uma só;
+
+nth-child é uma pseudo classe usada para alternar, por exemplo nth-child(2n)quer dizer que terá o (nesse caso background color cinza) de 2 em duas linhas, se for nth-child(odd) será apenas nas imparés(even para par) e assim por diante.
+-->
