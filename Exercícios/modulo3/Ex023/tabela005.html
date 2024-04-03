@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {  
+            width: 500px;       
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        tr.destaque {
+            background-color: aqua;
+        }
+
+        col.cnome {
+            background-color: yellow;
+        }
+
+        col.cgrupo {
+            background-color: bisque;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Manuela</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Arquiteta</td>
+        </tr>
+
+        <tr>
+            <td>Camila</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Médica</td>
+        </tr>
+
+        <tr>
+            <td>João Vitor</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Analista de Sistemas</td>
+        </tr>
+
+        <tr>
+            <td>Mariana</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Arquiteta</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Desenvolvedor</td>
+        </tr>
+
+        <tr class="destaque">
+            <td>Isadora</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Médica</td>
+        </tr>
+        
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">            
+            <col class="cprof">
+        </colgroup>
+    </table>
+</body>
+</html>
+
+<!-- destacar(isolar) uma linha é fácil e da pra fazer de uma vez só, mas uma coluna é complicado, na teoria teria que ir item a item da coluna e colocar class neles;
+
+Agora ficou mais simples com a tag colgroup, vc coloca o tanto de colunas existentes na tabela como col e nomeia uma class a cada uma, feito isso no estilo você apenas seleciona col.(nomeclass) e destaca como quiser;
+
+Se quiser pode usar o span para já destacar mais de uma de uma vez, como feito no exemplo, o cgrupo substitui a coluna 2 e 3 já que tem span"2"".
+-->
