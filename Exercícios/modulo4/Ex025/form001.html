@@ -12,9 +12,11 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="Sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="post">
+        <p><label for="nome">Nome:</label> 
+            <input type="text" name="nome" id="nome"></p>
+        <p><label for="sobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="sobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
@@ -23,5 +25,12 @@
 
 <!-- Esse primeiro exercicio funciona(é o mais simples) mas não é a melhor maneira pra se criar formulário;
      Todo formulário tem de ser construído entre a tag form;
-     input:submit é para aparecer o botão na tela, geralmente de enviar, confirmar...
+
+     input:submit é para aparecer o botão na tela, geralmente de enviar, confirmar...;
+
+     action="cadastro.php" ação vai ser disparada quando clicar no botão subtmit(enviar nesse caso), é um script que deve ser criado depois em alguma linguage, nesse caso uma simulação para php.
+
+     name e id, importante ter os dois porque cada um é importante para um tipo de linguagem. O label é fundamental para identificar a qual campo pertence(criar relação) o nome e ajudar nos mecanismos de buscas a "aprovar" o site, usar sempre label.
+
+    2 metodos para envio de formulario, por padrão é get o outro é post, ele não exibe informações de envio na url, mas não esta protegido ainda, isso só com criptografia. quando os dados não forem sensiveis pode usar o get e pode compartilhar url, só pode usar get usando até 3000 bits(caracteres). Ao contrario disso usar post.
 -->
