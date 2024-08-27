@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+            </p>
+        </fieldset>
+        <!-- Estudar mais sobre RegEx (Expressões Regulares)-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+
+<!-- o autocomplete tem várias extensões, de acordo com o colocado ele defini no campo o que deve ter;
+     pattern é uma RegEx, nesse caso é um padrão a ser definido, sempre começa com ^ e termina com $ ;
+     O placeholder é um atributo que cumpre a função de fornecer ao usuário uma dica que descreve o valor esperado em um dado campo de entrada;
+     fieldset faz um agrupamento e legend da o nome ao grupo, inclusive pode personalizar a parte da aparência;
+     pattern="^\(\d{2}\)\d{4,5}-\d{4}$" :
+     (\d{2}\) = abre parenteses, 2 digitos e fecha parenteses. No caso isso define o DDD e assim por diante.
+-->
