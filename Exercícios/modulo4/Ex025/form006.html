@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        
+        <p>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+
+<!--  <input type="color" é um seletor de cores;
+      <input type="range" é uma especie de barra que pode aumentar diminuir, por padrão é de 0 a 100, mas configuravel, value nesse caso é para qual 'nível' a barra aparece quando inicia o site; 
+      <input type="file" é um seletor de arquivos, quando utilizar esse controle não pode usar o metodo get e sim o post senão vai dar erro(pra permitir mais de 3000bytes).
+-->
