@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  <!-- podemos adicionar o icone menu através do site do google icons, na parte developer guide -->
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>  <!-- aqui coloca o nome do icone desejado de acordo com o site, onclick para add função de ser um menu de fato 'abrivel. E tem que fazer script no final'-->
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -32,6 +32,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cumque, laboriosam, nemo, mollitia blanditiis culpa aliquid saepe eum beatae libero sed? Inventore expedita animi ratione dignissimos est accusantium architecto labore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid quas aspernatur explicabo perspiciatis consequuntur earum necessitatibus recusandae, fugit quod, officia laudantium commodi reiciendis accusantium impedit quaerat iure dolor omnis iste? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam sed, officiis harum consequuntur eos explicabo ut laudantium pariatur voluptate ab iste culpa eligendi rem excepturi beatae omnis tempora temporibus nulla.</p>
         </article>
     </main>
+    <!-- script javascrit para menu funcionar -->
     <script>
 
         function mudouTamanho() {
@@ -52,5 +53,3 @@
     </script>
 </body>
 </html>
-
-<!--  -->
