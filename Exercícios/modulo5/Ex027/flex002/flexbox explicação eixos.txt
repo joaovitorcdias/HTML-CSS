@@ -1,0 +1,18 @@
+flex-direction: row; (da esquerda para direita) *padrão
+
+flex-direction: row-reverse; (inverte, lido da direita para esquerda)
+
+flex-direction: column; (coluna, de cima para baixo padrão)
+
+flex-direction: column-reverse; (de baixo para cima)
+
+main-axis (eixo principal)  
+ -main-start
+ -main-end
+
+cross-axis (eixo transversal)
+ -cross-start
+ -cross-end
+
+*o eixo principal muda de acordo com flex-direction, por padrão o row fica com main-axis da esquerda para direita, row-reverse o main fica da direita para esquerda, nos dois casos o cross de cima para baixo(em pé).
+ já no column o main é de cima para baixo e no column reverse de baixo para cima, nos dois o cross cira da esquerda para direita(deitado).
