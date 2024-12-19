@@ -1,0 +1,5 @@
+- O tamanho de um bloco vai depender muito do conteudo que existe nele.
+
+flex-wrap: nowrap; (valor padrão. Não quebra e tenta encolher o maximo possivel)
+flex-wrap: wrap; (nesse caso acontece a quebra do ultimo elemento, sempre no sentido do cross-axis)
+flex-wrap: wrap-reverse; (quando atingir o limite e começar a diminuir, ele vai quebrar na direção contraria do cross-axis)
