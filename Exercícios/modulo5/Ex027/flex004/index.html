@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: stretch; /* estica os ítens para preencher o container */
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+justify-content — controla o alinhamento de todos os itens no eixo principal.
+ flex-start: o primeiro item vai ficar grudado no main-start e o espaço em branco fica no main-end (final do eixo principal, não necessariamente na direita, depende do eixo principal onde começa e termina);
+
+ flex-end: inverte, o ultimo item sempre colado no main-end e o espaço em branco no main-start;
+
+ center: vai centralizar e os espaços em branco vão ser divididos iguais entre main start e end;
+
+ space-between: vai colocar o 1 item colado no main star e o ultimo colado no main end, os outros vão ser divididos de forma igual;
+
+ space-evenly: dividi os elementos sempre com o mesmo espaço entre eles, incluindo o primeiro e o ultimo, nesse caso eles não ficam colados;
+
+ space-around: os elementos são espalhados ao longo do eixo, mas também há espaço ao redor das bordas. É criado um espaço imaginario dividindo todo o espaço em blocos e os itens são centralizados dentro desses blocos.
+ 
+
+align-items — controla o alinhamento de todos os itens no eixo transversal.
+
+ stretch: estica os ítens para preencher o container;
+
+ flex-start: o primeiro item vai ficar grudado no cross-start e o espaço em branco fica no cross-end;
+
+ flex-end: inverte, o ultimo item sempre colado no cross-end e o espaço em branco no cross-start;
+
+ center: vai centralizar e os espaços em branco vão ser divididos iguais entre cross-start e cross-end;
+
+
+*sempre se atentar a direção do eixo para definir onde é start e end.
+ -->
