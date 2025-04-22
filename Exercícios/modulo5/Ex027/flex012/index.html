@@ -15,33 +15,22 @@
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-              
+            flex-basis: 200px;  
         }
 
         div#cxA {
-            /*flex-shrink: 0;
+            flex-shrink: 0;
             flex-grow: 1;
-            flex-basis: 200px;*/  
-
-            /* Ao invés de escrever separadamente, nos elementos filhos, podemos escrever em uma só linha, nessa ordem: flex = grow / shrink / basis */ 
-            
-            flex: 1 0 200px;
         }
 
         div#cxB {
-            /*flex-shrink: 1;
+            flex-shrink: 1;
             flex-grow: 1;
-            flex-basis: 150px;*/
-
-            flex: 1 1 150px ;
         }
 
         div#cxC {
-            /*flex-shrink: 8;
+            flex-shrink: 8;
             flex-grow: 1;
-            flex-basis: auto;*/
-
-            flex: 1 8 auto;
         }
     </style>
 </head>
@@ -56,8 +45,11 @@
 </html>
 
 <!--
-flex-shrink: 1 - valor por padrão(1) qualquer item pode encolher;
-flex-grow: 0   - valor por padrão(0) não pode crescer.
-Ex: Se colocar três elementos (0,1,2) flex-grow: 0 não cresce, flex-grow: 1 cresce e flex-grow: 2 o dobro do 1
-    Se colocar (0,2,2) 0 não cresce e 2 e 2 crescem iguais, não é o valor em si que determina e sim a proporção de um para outro.
+quando tiver no cod flex: initial significa que é o padrão: flex = 0 1 auto ;
+
+se quiser nada flexivel é flex: 0 0 auto ou simplesmente flex: none ;
+
+ao contrário se quiser o limete maximo de flexibilidade é flex: 1 1 auto ou simplesmente flex:auto ;
+
+se coloco só algum valor como flex: 3 quer dizer que o grow é 3 e o resto padrão, seria nesse caso flex: 3 1 auto.
 -->
