@@ -52,7 +52,7 @@ header > nav > a {
 header > nav > a:hover {
     background-color: white;
     color: black;
-    transition: background-color .5s;
+    transition: background-color .5s;  /* a mudança da cor quando passa a seta tem uma leve delay de 0.5 s */
 }
 
 main {
@@ -62,3 +62,5 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
 }
+
+/* o display: flex já resolve muita coisa em relação a organização do site em quebras sem prejuducar a interface */
