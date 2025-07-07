@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap;  /* passando o menu para coluna como eixo principal, ou seja, vertical */
+}
+
+header > h1 {
+    flex-basis: 50px;          /* dimensão no eixo principal */
+}
+
+header > nav > a {
+    width: 90vw;               /* tamanho do menu para não ficar pequeno, ocupar 90 da tela */
+}
